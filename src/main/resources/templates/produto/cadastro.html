@@ -77,7 +77,15 @@
 	                <div class="form-row">
 	                    <div class="form-group col-md-6">
 	                        <label for="nome">Nome do Produto</label>
-	                        <input type="text" class="form-control" id="nome" placeholder="Nome"
+	                        <input type="text" class="form-control" id="nome" 
+	                               autofocus="autofocus" name="nome" value=""/>
+	                        <div class="invalid-feedback">
+	
+	                        </div>
+	                    </div>
+	                     <div class="form-group col-md-6">
+	                        <label for="nome">Quantidade</label>
+	                        <input type="text" class="form-control" id="nome" 
 	                               autofocus="autofocus" name="nome" value=""/>
 	                        <div class="invalid-feedback">
 	
@@ -91,8 +99,7 @@
 	
 	                        </div>
 	                    </div>
-	                </div>
-	                <div class="form-row">
+	                    
 	                    <div class="form-group col-md-6">
 	                        <label for="dataEntrada">Data de Validade</label>
 	                        <input type="date" class="form-control" id="dataEntrada" name="dataEntrada" value=""/>
@@ -101,7 +108,7 @@
 	                        </div>
 	                    </div>
 	                </div>
-
+	     
 	                <input type="hidden" id="id" name="id" value=""/>
 	                <button type="submit" class="btn btn-primary btn-sm">Salvar</button>
 	            </form>
@@ -137,4 +144,4 @@
 
 </script>
 </body>
-</html>		
+</html>			
