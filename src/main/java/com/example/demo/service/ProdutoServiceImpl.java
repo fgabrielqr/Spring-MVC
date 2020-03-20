@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.example.demo.dao.ProdutoDao;
-import com.example.demo.domain.Produto;
+import com.example.demo.model.Produto;
 
 @Service @Transactional(readOnly = true)
 public class ProdutoServiceImpl implements ProdutoService {
