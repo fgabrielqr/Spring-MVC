@@ -18,8 +18,8 @@ public class Produto extends AbstractEntity<Long> {
 	@Column(nullable = false, unique = true)
 	private String nome;
 	
-	@Column(nullable = false, unique = true)
-	private String qtd;
+	@Column(nullable = false)
+	private int qtd;
 	
 	@NumberFormat(style = Style.CURRENCY, pattern = "#,##0.00")
 	@Column(nullable = false, columnDefinition = "DECIMAL(7,2) DEFAULT 0.00")
@@ -37,11 +37,11 @@ public class Produto extends AbstractEntity<Long> {
 		this.nome = nome;
 	}
 
-	public String getQtd() {
+	public int getQtd() {
 		return qtd;
 	}
 
-	public void setQtd(String qtd) {
+	public void setQtd(int qtd) {
 		this.qtd = qtd;
 	}
 
